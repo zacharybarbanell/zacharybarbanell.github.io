@@ -1,6 +1,8 @@
 # DO NOT REMOVE THIS
 theme = "hugo-theme-codex" 
 
+publishDir = "docs"
+
 # Override these settings with your own
 title = "codex"
 languageCode = "en-us"
@@ -65,3 +67,5 @@ baseURL = "https://zacharybarbanell.com/"
   name = "blog"
   title = "Blog"
   url = "/blog"
+  
+publishDir = "docs"
