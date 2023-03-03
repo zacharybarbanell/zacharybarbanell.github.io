@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="Chroma Key">
-<meta name="twitter:player" content="https://zacharybarbanell.github.io/Enigmarch-2022/1/Chroma-Key-Embed">
+<meta name="twitter:player" content="https://zacharybarbanell.github.io/Enigmarch-2023/1/Chroma-Key-Embed">
 <meta name="twitter:player:width" content="1024">
 <meta name="twitter:player:height" content="1024">
-<meta property="og:image" content="https://zacharybarbanell.github.io/Enigmarch-2022/1/Chroma-Key.png">
+<meta property="og:image" content="https://zacharybarbanell.github.io/Enigmarch-2023/1/Chroma-Key.png">
 <title>Chroma Key</title>
 <style>
 
@@ -66,10 +66,11 @@ a {
 .gameContainer {
 	background-color:none;
 	position:absolute;
-	left:10%;
+	inset:0;
+	/*left:10%;
 	right:10%;
 	top:70px;
-	bottom:70px; touch-action: none;
+	bottom:70px;*/ touch-action: none;
 }
 
   .mobile-menu {
@@ -216,7 +217,7 @@ a {
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-<div class="title"><h1>Chroma Key</h1></div>
+<!-- <div class="title"><h1>Chroma Key</h1></div> -->
 <div class="gameContainer">
 <canvas 
     id="gameCanvas" 
@@ -224,11 +225,11 @@ a {
     onmouseout="mouseOut()"
     onkeydown="keyDown()"
 ></canvas>
-</div> 
+<!-- </div> 
 <div class="footer">
 <span id="errormessage" style="color:red;"></span>
 <a href="http://www.puzzlescript.net">www.puzzlescript.net</a>
-</div>
+</div> -->
 
 <div style = "z-index: 2; background: transparent; position: absolute; top: 0.5em; right: 1em;">
     <img alt="mute" id="muteButton" width=32px height=32px onClick="muteAudio()" style="display:none"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xOdTWsmQAAAIGSURBVFhH3ZchcsJAGIURiApEBbIH6BEqOQASWYHoESoQFcwgOAaiEsEBKip6BERlBQJRwQEqtu/tvj+TLMnAJpntTL+ZP/De7p/9k102YUCcc0tEbpbx4MHIAMcKQ2LM4ktmOCYH9gXIawXzQasLYGKnAphryErC53VJLiPvhNgjtog54tZ3bgDt7QpgTkyD/42Y+aQa2CG5APYvMdGnFTBC3COeEG8IY4M4uxtsSCqAfQ1ZhSdZATangdNCvhCVImheVQC6FFdKZHtkeQ8fB8QOsUCM5N0hPhBkQ8+gEQ5BXLUb+swSsu0cZXjFE/kswu7ElB6hCAeJS/isCDXZOcaIKeKdHvhBPKiN00F4l+zu1BaQtKkop1Ic5BCx8g3OfSJu5Fthj9LnBfB7Ckqzc/Dq1oihtA34LP0SpHuV7r0AYyXN6SC7SO+ley9gFpQ7SHNNkFifpP9fAcZaOvsUNC3ChbQtwq30eQGg88+QwLKNjRuS/e6toLl0bQGNsF+MmuwcdRuR7Ya2EfEJ6Z8JFOEQRK6tuHg8U4TDBdClr4eRn3uDRjhcCfsasgpPsgLs8uP4iBiryUMzqQDC/iXiFxJbA1zttg4IX9EqgxM2JBdAmBPT4Pf/SmYwr4y8PC+lBnMNWUn4vLbJBvNBtz8m4E//mtkGlK0IjhWG1Jj8EnRWMPhg8AvjeqPLyfe3igAAAABJRU5ErkJggg==" />
